@@ -7,7 +7,7 @@ def equilateral(radius:int, vertices:int):
         print("has to be bigger/equal to 3")
         return
     temp_tert = turtle.Turtle()
-    angle = ((180*(vertices-3))+180)/vertices#find angle given vertices 
+    angle = 180-(((180*(vertices-3))+180)/vertices)#find angle given vertices 
     if angle == 60:
         print("is ")
     for i in range(vertices):
@@ -22,6 +22,6 @@ def equilateral(radius:int, vertices:int):
 
 
 
-equilateral(50,3)
+equilateral(10,25)
      
 turtle.done()
